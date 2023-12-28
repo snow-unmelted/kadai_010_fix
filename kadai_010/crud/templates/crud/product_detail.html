@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品詳細</title>
+</head>
+<body>
+    <h1>商品詳細</h1>
+    <style>
+        table{
+            border-collapse:collapse;
+            border: 1px solid;
+        }
+        th,td{
+            border: 1px solid;
+            padding: 8px;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>商品名</th>
+                <th>価格</th>
+            </tr>
+        </thead>
+        
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}円</td>
+        </tr>
+       
+    </table>
+    <a href="{% url 'list' %}">戻る</a>
+</body>
+</html>
